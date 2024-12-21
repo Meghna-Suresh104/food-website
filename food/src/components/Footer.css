@@ -1,0 +1,81 @@
+/* src/components/Footer.css */
+
+.footer {
+    background-color: #201e1e;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    width: 30%;
+    padding: 10px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 1rem;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  /* Justify text in Contact section */
+.footer-section.contact p {
+    text-align: justify;
+    margin: 0;
+  }
+  
+  /* Optional: Apply justification to all paragraphs in footer */
+  .footer p {
+    text-align: justify;
+    margin: 0;
+  }
+  /* Center the 'All rights reserved' text */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px; /* Adjust this value to add spacing above the text */
+    font-size: 0.9rem; /* You can adjust the font size to fit your design */
+    padding: 10px 0; /* Optional: Add padding for some spacing */
+    background-color: #201e1e; /* Keep the footer background */
+    color: white; /* Ensure text is white for contrast */
+  }
+  

@@ -1,0 +1,140 @@
+/* src/components/About.css */
+
+.about-container {
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.2rem;
+    color: #c8bfbf;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  /* Timeline Section */
+  .timeline-container {
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .timeline-container h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .timeline {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  .timeline-event {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 50px;
+  }
+  
+  .timeline-event::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff5722;
+    border-radius: 50%;
+  }
+  
+  .timeline-year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5722;
+    margin-right: 20px;
+    width: 80px;
+  }
+  
+  .timeline-content {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .timeline-content h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .timeline-content p {
+    font-size: 1rem;
+    color: #d9d1d1;
+  }
+  
+  /* Team Section */
+  .team-container {
+    margin-top: 60px;
+  }
+  
+  .team-container h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .team-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-member h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  /* For responsive design */
+  @media (max-width: 768px) {
+    .team-profiles {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

@@ -1,0 +1,57 @@
+/* Header Styling */
+header {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Aligns logo and nav-links */
+  align-items: center; /* Vertically centers logo and text */
+  padding: 0 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Align the logo text and animation vertically */
+  gap: 15px; /* Space between logo and tagline */
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column; /* Stack logo text and tagline vertically */
+  justify-content: center; /* Center text vertically */
+  align-items: flex-start; /* Align text to the left */
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0; /* Remove any margin between the logo and tagline */
+}
+
+.logo-subtext {
+  color: white;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-top: 5px; /* Space between the logo and the tagline */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Space between navigation links */
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}

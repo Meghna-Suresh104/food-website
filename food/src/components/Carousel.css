@@ -1,0 +1,21 @@
+/* src/components/Carousel.css */
+
+.carousel-container {
+    max-width: 100%;  /* Ensure carousel takes up full width of container */
+    margin: 20 auto;
+    padding-bottom: 50px;
+  }
+  
+  .carousel-item img {
+    width: 80%;  /* Adjust width to 80% of the container, you can change this value */
+    max-height: 400px;  /* Limit the max height of images */
+    object-fit: contain;  /* Ensure images retain their aspect ratio */
+    margin: 0 auto;  /* Center the images horizontally */
+    
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 1; /* Ensure the navigation buttons are above the images */
+  }
+  

@@ -1,0 +1,130 @@
+/* Home Page Styles */
+.home header {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+  }
+  
+  .home header h2 {
+    font-size: 1rem;
+    color: #ded3d3;
+  }
+  
+  .home header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Dark Mode Styling for Home Page */
+  .app.dark .home header {
+    background-color: #444;  /* Dark background for header */
+  }
+  
+  .app.dark .home header h2 {
+    color: #fff;  /* White text for header */
+  }
+  
+  .app.dark .home header p {
+    color: #bbb;  /* Light grey text for paragraph */
+  }
+  
+  /* Testimonial Section Styles */
+  .testimonials {
+    background-color: #1c1919;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    background-color: rgb(23, 21, 21);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-card .feedback {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card .customer-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card .rating {
+    color: #ff9f00;
+    font-size: 1.2rem;
+  }
+  
+  /* Dark Mode Styling for Testimonials */
+  .app.dark .testimonials {
+    background-color: #333;  /* Dark background for testimonials */
+  }
+  
+  .app.dark .testimonials h2 {
+    color: #fff;  /* White text for testimonial header */
+  }
+  
+  .app.dark .testimonial-card {
+    background-color: #555;  /* Dark background for cards */
+    color: #fff;  /* White text inside testimonial cards */
+  }
+  
+  .app.dark .testimonial-card .rating {
+    color: #ff9f00;  /* Keep yellow rating color */
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #e67e00;
+  }
+  
+  /* Dark Mode Button Styling */
+  .app.dark .btn {
+    background-color: #ff7f00; /* Slightly different button color for dark mode */
+  }
+  
+  .app.dark .btn:hover {
+    background-color: #d45e00; /* Darker hover color */
+  }
+  /* src/components/Home.css */
+/* Landscape Image Section Styling */
+.landscape-image {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.landscape-pic {
+    width: 100%;
+    height: 300px;  /* Set a fixed height */
+    object-fit: cover;  /* Ensures the image covers the area without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Optional: Adds a subtle shadow to the image */
+}
+
+  
