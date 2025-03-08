@@ -1,18 +1,18 @@
-/* AuthPage Styling */
+
 .auth-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('/public/images/background.jpg'); /* Path to your background image */
-    background-size: cover; /* Ensure the background covers the entire page */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent image repetition */
+    background-image: url('/public/images/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     padding: 20px;
   }
   
   .auth-form {
-    background-color: rgba(47, 41, 41, 0.8); /* Semi-transparent background for the form */
+    background-color: rgba(47, 41, 41, 0.8); 
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

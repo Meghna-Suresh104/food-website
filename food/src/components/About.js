@@ -1,15 +1,14 @@
-// src/components/About.js
 import React from 'react';
-import './About.css';  // Link to the CSS file for styling
+import './About.css';  
 
 const About = () => {
-  // Array of team members with updated roles
+  
   const teamMembers = [
-    { id: 1, name: 'Meghna', role: 'Lead Developer', image: '/images/profile.png' },
-    { id: 2, name: 'Disha', role: 'Digital Marketing Specialist', image: '/images/profile.png' },
-    { id: 3, name: 'Nidhi', role: 'Operations Coordinator', image: '/images/profile.png' },
-    { id: 4, name: 'Sangini', role: 'Customer Service Lead', image: '/images/profile.png' },
-    { id: 5, name: 'Sannidhi', role: 'Front of House Manager', image: '/images/profile.png' },
+    { id: 1, name: 'Meghna Suresh', role: 'Lead Developer', image: '/images/profile.png' },
+    { id: 2, name: 'Violet Evergarden', role: 'Digital Marketing Specialist', image: '/images/profile.png' },
+    { id: 3, name: 'Leo Valdez', role: 'Operations Coordinator', image: '/images/profile2.png' },
+    { id: 4, name: 'Newt Scammander', role: 'Customer Service Lead', image: '/images/profile2.png' },
+    { id: 5, name: 'Alex Russo', role: 'Front of House Manager', image: '/images/profile.png' },
   ];
 
   return (

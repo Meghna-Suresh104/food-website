@@ -1,15 +1,10 @@
-/* src/App.css */
-
-/* Set global body background to black for all pages */
 body {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text color */
+  background-color: #000; 
+  color: #fff; 
   margin: 0;
-  font-family: Arial, sans-serif; /* Choose a font family you prefer */
+  font-family: Arial, sans-serif; 
 }
 
-
-/* Additional styles for content */
 .content {
   text-align: center;
   padding: 20px;

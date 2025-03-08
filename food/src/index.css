@@ -12,7 +12,6 @@ code {
     monospace;
 }
 @media (max-width: 600px) {
-  /* Styles for devices with screen width <= 600px (mobile) */
   body {
     font-size: 14px;
   }

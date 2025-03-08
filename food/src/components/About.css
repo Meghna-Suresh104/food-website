@@ -1,4 +1,4 @@
-/* src/components/About.css */
+
 
 .about-container {
     padding: 40px;
@@ -19,7 +19,7 @@
     margin-bottom: 40px;
   }
   
-  /* Timeline Section */
+  
   .timeline-container {
     margin-top: 40px;
     padding: 20px;
@@ -79,7 +79,7 @@
     color: #d9d1d1;
   }
   
-  /* Team Section */
+  
   .team-container {
     margin-top: 60px;
   }
@@ -130,7 +130,7 @@
     color: #ccc;
   }
   
-  /* For responsive design */
+  
   @media (max-width: 768px) {
     .team-profiles {
       flex-direction: column;

@@ -1,28 +1,26 @@
-/* Header Styling */
 header {
   background-color: #333;
   padding: 20px 0;
 }
 
-/* Navbar Styling */
 .navbar {
   display: flex;
-  justify-content: space-between; /* Aligns logo and nav-links */
-  align-items: center; /* Vertically centers logo and text */
+  justify-content: space-between;
+  align-items: center; 
   padding: 0 20px;
 }
 
 .logo-container {
   display: flex;
-  align-items: center; /* Align the logo text and animation vertically */
-  gap: 15px; /* Space between logo and tagline */
+  align-items: center;
+  gap: 15px; 
 }
 
 .logo-text {
   display: flex;
-  flex-direction: column; /* Stack logo text and tagline vertically */
-  justify-content: center; /* Center text vertically */
-  align-items: flex-start; /* Align text to the left */
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start; 
 }
 
 .logo {
@@ -30,20 +28,20 @@ header {
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0; /* Remove any margin between the logo and tagline */
+  margin: 0; 
 }
 
 .logo-subtext {
   color: white;
   font-size: 1.1rem;
   font-style: italic;
-  margin-top: 5px; /* Space between the logo and the tagline */
+  margin-top: 5px; 
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px; /* Space between navigation links */
+  gap: 15px; 
 }
 
 .nav-links li a {

@@ -1,4 +1,3 @@
-/* Home Page Styles */
 .home header {
     text-align: center;
     padding: 10px;
@@ -14,21 +13,19 @@
     font-size: 1.2rem;
     color: #666;
   }
-  
-  /* Dark Mode Styling for Home Page */
+
   .app.dark .home header {
-    background-color: #444;  /* Dark background for header */
+    background-color: #444;  
   }
   
   .app.dark .home header h2 {
-    color: #fff;  /* White text for header */
+    color: #fff;  
   }
   
   .app.dark .home header p {
-    color: #bbb;  /* Light grey text for paragraph */
+    color: #bbb; 
   }
-  
-  /* Testimonial Section Styles */
+
   .testimonials {
     background-color: #1c1919;
     padding: 40px;
@@ -69,25 +66,24 @@
     font-size: 1.2rem;
   }
   
-  /* Dark Mode Styling for Testimonials */
   .app.dark .testimonials {
-    background-color: #333;  /* Dark background for testimonials */
+    background-color: #333;  
   }
   
   .app.dark .testimonials h2 {
-    color: #fff;  /* White text for testimonial header */
+    color: #fff;  
   }
   
   .app.dark .testimonial-card {
-    background-color: #555;  /* Dark background for cards */
-    color: #fff;  /* White text inside testimonial cards */
+    background-color: #555;  
+    color: #fff; 
   }
   
   .app.dark .testimonial-card .rating {
-    color: #ff9f00;  /* Keep yellow rating color */
+    color: #ff9f00;  
   }
   
-  /* Button Styling */
+
   .btn {
     background-color: #ff8c00;
     color: white;
@@ -104,16 +100,14 @@
     background-color: #e67e00;
   }
   
-  /* Dark Mode Button Styling */
   .app.dark .btn {
-    background-color: #ff7f00; /* Slightly different button color for dark mode */
+    background-color: #ff7f00; 
   }
   
   .app.dark .btn:hover {
-    background-color: #d45e00; /* Darker hover color */
+    background-color: #d45e00; 
   }
-  /* src/components/Home.css */
-/* Landscape Image Section Styling */
+  
 .landscape-image {
     margin-top: 30px;
     text-align: center;
@@ -121,10 +115,10 @@
 
 .landscape-pic {
     width: 100%;
-    height: 300px;  /* Set a fixed height */
-    object-fit: cover;  /* Ensures the image covers the area without distortion */
-    border-radius: 10px; /* Optional: Adds rounded corners to the image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Optional: Adds a subtle shadow to the image */
+    height: 300px;  
+    object-fit: cover;  
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
   

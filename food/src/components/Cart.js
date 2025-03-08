@@ -1,57 +1,48 @@
-// src/components/Cart.js
-import React, { useState } from 'react';
-import Lottie from 'react-lottie';  // Import Lottie component
-import animationData from '../assets/animations/cart.json';  // Import your Lottie animation file
-import './Cart.css';  // Optional: Add styles for the Cart component
+import React, { useState } from "react";
+import Lottie from "react-lottie";
+import animationData from "../assets/animations/cart.json";
+import "./Cart.css"; 
 
-function Cart({ cartItems, removeFromCart, total, addToCart }) {
-  const [notification, setNotification] = useState('');
+function Cart({ cartItems, removeFromCart, addToCart, total }) {
+  const [notification, setNotification] = useState("");
   const [checkoutComplete, setCheckoutComplete] = useState(false);
-
-  // If cart is empty, show Lottie animation
+  
   const isCartEmpty = cartItems.length === 0;
 
-  // Lottie options
   const defaultOptions = {
-    loop: true,  // Loop the animation
-    autoplay: true,  // Autoplay the animation
-    animationData: animationData,  // Lottie animation data
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',  // Aspect ratio setting for responsiveness
+      preserveAspectRatio: "xMidYMid slice",
     },
   };
 
-  // Handle checkout
   const handleCheckout = () => {
-    // Simulate checkout process
     setCheckoutComplete(true);
-    setNotification('Your order has been successfully placed!');
-    
-    // Reset checkout after 3 seconds
+    setNotification("Your order has been successfully placed!");
+
     setTimeout(() => {
       setCheckoutComplete(false);
-      setNotification('');
+      setNotification("");
     }, 3000);
   };
 
-  // Handle quantity change
-  const handleQuantityChange = (id, action) => {
-    // Increment or decrement item quantity by calling addToCart (to add) or removeFromCart (to remove)
-    if (action === 'increment') {
-      addToCart(id);  // Assuming addToCart accepts id to add the item to cart
-    } else if (action === 'decrement') {
-      removeFromCart(id);  // Remove the item
+  const handleQuantityChange = (item, action) => {
+    if (action === "increment") {
+      addToCart(item); 
+    } else if (action === "decrement") {
+      if (item.quantity > 1) {
+        removeFromCart(item.id); 
+      }
     }
   };
 
   return (
     <div className="cart-container">
       <div className="cart-header">
-        {/* Lottie Animation Next to the Cart Title */}
         <h2>Your Cart</h2>
-        {isCartEmpty && (
-          <Lottie options={defaultOptions} height={60} width={60} />
-        )}
+        {isCartEmpty && <Lottie options={defaultOptions} height={60} width={60} />}
       </div>
 
       {isCartEmpty ? (
@@ -69,11 +60,13 @@ function Cart({ cartItems, removeFromCart, total, addToCart }) {
                     <p>{item.name}</p>
                     <p className="cart-item-price">${item.price.toFixed(2)}</p>
                     <div className="cart-item-quantity">
-                      <button onClick={() => handleQuantityChange(item.id, 'decrement')}>-</button>
+                      <button onClick={() => handleQuantityChange(item, "decrement")}>-</button>
                       <span>{item.quantity}</span>
-                      <button onClick={() => handleQuantityChange(item.id, 'increment')}>+</button>
+                      <button onClick={() => handleQuantityChange(item, "increment")}>+</button>
                     </div>
-                    <button onClick={() => removeFromCart(item.id)} className="remove-item-btn">Remove</button>
+                    <button onClick={() => removeFromCart(item.id)} className="remove-item-btn">
+                      Remove
+                    </button>
                   </div>
                 </div>
               </li>
@@ -81,7 +74,9 @@ function Cart({ cartItems, removeFromCart, total, addToCart }) {
           </ul>
           <div className="cart-total">
             <p>Total: ${total.toFixed(2)}</p>
-            <button onClick={handleCheckout} className="checkout-btn">Checkout</button>
+            <button onClick={handleCheckout} className="checkout-btn">
+              Checkout
+            </button>
           </div>
         </div>
       )}

@@ -1,32 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Lottie from 'react-lottie';
-import animationData from '../assets/animations/logoAnimation.json'; // Correct path to animation file
+import animationData from '../assets/animations/logoAnimation.json'; 
 import './Header.css';
 
 function Header() {
-  // Lottie animation settings
   const defaultOptions = {
-    loop: true, // Animation will loop
-    autoplay: true, // Animation plays automatically
-    animationData: animationData, // Your animation data imported from the JSON file
+    loop: true, 
+    autoplay: true, 
+    animationData: animationData, 
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice', // Adjust how the animation fits within the container
+      preserveAspectRatio: 'xMidYMid slice', 
     },
   };
 
   return (
     <header>
       <nav className="navbar">
-        {/* Logo container with Fusion Station text and tagline below */}
+        
         <div className="logo-container">
-          {/* Lottie animation */}
+          
           <Lottie options={defaultOptions} height={80} width={80} />
 
-          {/* Fusion Station Text */}
+         
           <div className="logo-text">
             <h1 className="logo">Fusion Station</h1>
-            {/* Tagline below the logo */}
+            
             <p className="logo-subtext">Bringing Flavors to Life</p>
           </div>
         </div>

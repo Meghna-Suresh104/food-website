@@ -1,7 +1,5 @@
-// src/components/Contact.js
 import React from 'react';
-import './Contact.css';  // Ensure you have corresponding styles
-
+import './Contact.css';  
 function Contact() {
   return (
     <div className="contact-container">

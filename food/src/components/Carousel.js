@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import './Carousel.css';  // Add any specific carousel CSS
+import './Carousel.css';  
 
 const Carousel = () => {
   const settings = {
@@ -9,8 +9,8 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,  // Enables auto-play
-    autoplaySpeed: 3000,  // Time between transitions (in milliseconds)
+    autoplay: true,  
+    autoplaySpeed: 3000,  
   };
 
   return (
